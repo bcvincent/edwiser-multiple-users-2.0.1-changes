@@ -232,10 +232,7 @@ class EdwiserMultipleUsersCoursePurchasePublic
                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                     <span id="wdm-diff-prod-qty-success-msg"></span>
                 </div>
-                <div class="wdm-cartp-group-chk-box">
-                    <input id="mucp-cart-group-checkbox" type="checkbox" name="mucp-group-checkbox" title="<?php _e("This will allow to create the same product for all the courses products", 'ebbp-textdomain'); ?>" <?php echo $checked; ?>>
-                    <label><?php _e("Add all product in same group", 'ebbp-textdomain'); ?></label>
-                </div>
+              
             </div>
             <?php
         }
