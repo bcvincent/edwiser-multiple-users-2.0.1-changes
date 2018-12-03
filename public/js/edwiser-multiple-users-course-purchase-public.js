@@ -83,8 +83,8 @@
         }
 
         /**
-         * Handle the group purchase enable disable events 
-         * If the checkbox is enabled then enable the product quantity box 
+         * Handle the group purchase enable disable events
+         * If the checkbox is enabled then enable the product quantity box
          * Disable otherwise
          */
         $("#wdm_edwiser_self_enroll").change(function () {
@@ -195,8 +195,8 @@
         });
 
         /**
-         * Functionality to increase the product quantity uniformly in the add 
-         * more product/quantity popup box for the each product 
+         * Functionality to increase the product quantity uniformly in the add
+         * more product/quantity popup box for the each product
          */
         $(document).on('keypress click input', '#wdm_new_prod_qty', function (event) {
             if (event.which == 45 || event.which == 46 || event.which == 189) {
@@ -233,7 +233,7 @@
         });
 
         /**
-         * Functionality to update the product quntity on checkbox checked uncheced in the 
+         * Functionality to update the product quntity on checkbox checked uncheced in the
          * add more product functions.
          */
         $(document).on('change', '.wdm_selected_products', function (event) {
@@ -944,6 +944,11 @@
 
 
         function setFormValues(FirstName = '', lastname = '', email = ''){
+
+          if (!FirstName) FirstName = ''; //FIX FOR IE
+          if (!lastname) lastname = '';//FIX FOR IE
+          if (!email) email = '';//FIX FOR IE
+
             jQuery("#wdm_enroll_fname").val(FirstName);
             jQuery("#wdm_enroll_lname").val(lastname);
             jQuery("#wdm_enroll_email").val(email);
