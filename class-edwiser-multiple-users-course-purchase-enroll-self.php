@@ -97,7 +97,7 @@ if (!class_exists('EdwiserSelfEnroll')) {
                     ?>
                     <div class="wdm_edwiser_bulk_purchase">
                         <input type="checkbox" name="wdm_edwiser_self_enroll" id="wdm_edwiser_self_enroll" >
-                        <?php echo apply_filters('wdm_edwiser_bulk_purchase_label', __('Enable Group Purchase', 'ebbp-textdomain'));
+                        <?php echo apply_filters('wdm_edwiser_bulk_purchase_label', __('Are you buying this course on behalf of someone else?', 'ebbp-textdomain'));
                         ?>
                     </div>
                     <?php
