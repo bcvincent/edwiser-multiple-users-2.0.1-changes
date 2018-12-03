@@ -216,7 +216,7 @@ class EdwiserMultipleUsersCoursePurchasePublic
                 $flag += 1;
             }
         }
-        
+
         if ($flag > 1) {
             $checked = '';
             if (WC()->session->get('eb-bp-create-same-product')) {
@@ -251,7 +251,7 @@ class EdwiserMultipleUsersCoursePurchasePublic
      */
     public function showGroupedProductMessage($product_get_title, $cart_item)
     {
-        $title = "Group Purchase Enabled";
+        $title = "Purchasing for someone else";
         if (isset($cart_item['wdm_edwiser_self_enroll']) && $cart_item['wdm_edwiser_self_enroll'] != 'no') {
             return sprintf('%s <div><span class = "wdm-bulk-purchase-message">%s</span></div>', $product_get_title, $title);
         } else {
