@@ -61,18 +61,7 @@ if (is_user_logged_in()) {
                     ?></button>
                         </div>
                     </li>
-                    <li class="enroll-button-grid">
-                        <div>
-                            <button class="enroll-student-page-button" id="add-product-button"><?php _e('Add Product', 'ebbp-textdomain');
-                    ?></button>
-                        </div>
-                    </li>
-                    <li class="enroll-button-grid">
-                        <div>
-                            <button class="enroll-student-page-button" id="add-quantity-button"><?php _e('Add Quantity', 'ebbp-textdomain');
-                    ?></button>
-                        </div>
-                    </li>
+                    
 
 
                     <div id="add-quantity-popup"></div>
